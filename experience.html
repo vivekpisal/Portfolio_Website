@@ -7,7 +7,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
+<link id="mystylesheet" rel="stylesheet" type="text/css" href="css/light.css">
 
 <title>Portfolio Website</title>
 </head>
@@ -28,4 +28,15 @@
     </li>
   </ul>
 </body>
+<script type="text/javascript">
+
+    function swapStyle(sheet){
+      document.getElementById('mystylesheet').href = sheet
+      document.setAttribute('href', sheet);
+    }
+  window.onload = _ =>
+  swapStyle(
+  localStorage.getItem("theme") || "css/dark.css"
+ );
+</script>
 </html>
