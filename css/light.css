@@ -1,5 +1,6 @@
-body{
+body,div{
 	background-color: #fff;
+	color:black;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -13,7 +14,7 @@ p, span, small{
 #box{
 	width: 400px;
 	margin: 0 auto;
-	margin-top: 100px;
+	margin-top: 10px;
 	border: 2px solid #e7e7e7;
 	border-radius: 5px;
 	text-align: center;
@@ -23,7 +24,7 @@ p, span, small{
 
 #profile_pic{
 	display: block;
-	border-radius: 50%;
+	border-radius: 45%;
 	margin: 10px auto;
 	width: 200px;
 	border: 2px solid #e7e7e7;
